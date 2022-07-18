@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fibonacci series</title>
+  <script>
+let number = parseInt(prompt('Enter a positive number: '));
+let a = 0, b = 1, nextTerm;
+
+console.log('Fibonacci Series:');
+console.log(a); // print 0
+console.log(b); // print 1
+nextTerm = a + b;
+while (nextTerm <= number) {
+    console.log(nextTerm);
+
+    a = b;
+    b = nextTerm;
+    nextTerm = a + b;
+}
+  </script>
+</head>
+<body>
+  <h1>Fibonacci series</h1>
+</body>
+</html>
