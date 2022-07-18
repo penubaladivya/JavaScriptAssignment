@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>star Triangle</title>
+    <title>Inverse triangle</title>
     <script>
       let n = 5;
       let string = "";
-      for (let i = 1; i <= n; i++) {
-        for (let j = 0; j < i; j++) {
+      for (let i = 0; i < n; i++) {
+        for (let k = 0; k < n - i; k++) {
           string += "*";
         }
         string += "\n";
@@ -18,6 +18,6 @@
     </script>
   </head>
   <body>
-    <h1>Right Angle Triangle</h1>
+    <h1>Inverse Triangle</h1>
   </body>
 </html>
